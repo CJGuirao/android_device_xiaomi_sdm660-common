@@ -107,8 +107,8 @@ public class DozeSettingsFragment extends SettingsBasePreferenceFragment
 
     private void showHelp() {
         AlertDialog helpDialog = new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.doze_settings_help_title)
-                .setMessage(R.string.doze_settings_help_text)
+                .setTitle("Help")
+                .setMessage("These features use sensor events to launch a doze notification pulse. The chosen sensor is only enabled when the device receives a notification, this helps to reduce battery usage. There is also an option to enable the chosen sensor as soon as the screen turns off, this will cause higher battery usage.")
                 .setPositiveButton(R.string.dialog_ok,
                         (dialog, which) -> {
                             getActivity()
